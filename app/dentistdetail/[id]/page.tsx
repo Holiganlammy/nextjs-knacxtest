@@ -5,7 +5,6 @@ import { Undo2 } from 'lucide-react';
 export default function page(props: { params: { id: number; slug: string } }) {
   const slug = props.params.slug ? props.params.slug : props.params.id;
   const dentistDetail = dentists.filter(dentist => dentist.slug === slug);
-  const newDate: Date = new Date();
   return (
     <section>
       {dentistDetail.length > 0 ? (
